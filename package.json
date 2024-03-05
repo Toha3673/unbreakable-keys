@@ -1,0 +1,9 @@
+{
+	"name": "unbreakable-keys-1.0.0",
+	"version": "1.0.0",
+	"main": "src/mod.js",
+	"license": "CC BY-NC-SA 3.0",
+	"author": "Toha3673",
+	"akiVersion": "3.7.x",
+	"loadBefore": ["ServerValueModifier"]
+}

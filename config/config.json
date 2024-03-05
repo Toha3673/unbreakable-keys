@@ -1,0 +1,11 @@
+{
+    "enabled": true,
+
+    "weightless_keys": true,
+    "unbreakable_keys": true,
+    "affects_legendary_keys": true,
+
+    "weightless_keycards": true,
+    "unbreakable_keycards": true,
+    "affects_legendary_keycards": true
+}
