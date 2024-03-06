@@ -15,11 +15,12 @@ class unbreakable_keys {
 
             for (const item in dbItems) {
                 const itemProps = dbItems[item]._props;
+
+                if (cfg.enable_blacklist && cfg.blacklisted_keys.includes(dbItems[item]._id))
+                    continue;
+
                 if (dbItems[item]._parent == BClass.BaseClasses.KEY_MECHANICAL) {
                     itemProps.DiscardLimit = -1;
-
-                    if (!cfg.affects_legendary_keys && itemProps.BackgroundColor == "yellow")
-                        continue;
 
                     if (cfg.unbreakable_keys)
                         itemProps.MaximumNumberOfUsage = 0;
@@ -29,9 +30,6 @@ class unbreakable_keys {
                 }
                 if (dbItems[item]._parent == BClass.BaseClasses.KEYCARD) {
                     itemProps.DiscardLimit = -1;
-
-                    if (!cfg.affects_legendary_keycards && itemProps.BackgroundColor == "yellow")
-                        continue;
 
                     if (cfg.unbreakable_keycards)
                         itemProps.MaximumNumberOfUsage = 0;
