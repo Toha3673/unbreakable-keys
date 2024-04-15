@@ -4,6 +4,6 @@
 	"main": "src/mod.js",
 	"license": "CC BY-NC-SA 3.0",
 	"author": "Toha3673",
-	"akiVersion": "3.7.x",
+	"akiVersion": "3.8.x",
 	"loadBefore": ["ServerValueModifier"]
 }
