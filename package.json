@@ -4,6 +4,6 @@
 	"main": "src/mod.js",
 	"license": "CC BY-NC-SA 3.0",
 	"author": "Toha3673",
-	"sptVersion": "3.9.x",
+	"sptVersion": "~3.9",
 	"loadBefore": ["ServerValueModifier"]
 }
